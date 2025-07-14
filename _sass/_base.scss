@@ -398,26 +398,27 @@ ul.task-list input[type="checkbox"] {
 // Social (bottom)
 
 .social {
-  text-align: center;
+  text-align: left;
+  margin-bottom: 1rem;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2rem;
 
     a {
       img {
-        width: 3.2rem;
-        height: 3.2rem;
+        width: 1.2rem;
+        height: 1.2rem;
         margin-bottom: 1rem;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
+        width: 1.5rem;
+        height: 2rem;
         margin-bottom: 0.5rem;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 1.5rem;
+          height: 1.5rem;
         }
       }
 
@@ -434,6 +435,10 @@ ul.task-list input[type="checkbox"] {
         }
       }
     }
+  }
+
+  .contact-email {
+    font-size: 1rem;
   }
 
   .contact-note {

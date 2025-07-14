@@ -6,15 +6,35 @@ layout: default
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
+        {{ site.last_name }} | {{ site.chinese_name }}
       {% else %}
         {{ site.title }}
       {% endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
+    
   </header>
 
   <article>
+    <!-- Social -->
+    {% if page.social %}
+      <div class="social">
+
+        <div class="contact-email"><a href="" title="personal email"><i class="fa-solid fa-envelope"></i></a> yyj980401 (at) 126 (dot) com (personal) &nbsp;&nbsp;</div>
+        <div class="contact-email"><a href="" title="work email"><i class="fa-solid fa-envelope"></i></a> yunjia (dot) yang (at) tum (dot) de (work)</div>
+
+        <div class="contact-icons">{% include social.liquid %}</div>
+
+        <!--<div class="contact-note">{{ site.contact_note }}</div>-->
+      </div>
+    {% endif %}
+
+    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+      {% include newsletter.liquid center=true %}
+    {% endif %}
+
+    <hr>
+
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
@@ -40,6 +60,16 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <hr>
+    
+    <!-- Selected papers -->
+    {% if page.selected_papers %}
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
@@ -56,25 +86,6 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
 
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
   </article>
 </div>
