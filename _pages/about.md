@@ -8,7 +8,7 @@ profile:
   align: right
   image: prof_picture.jpg
   image_circular: false # crops the image to make it circular
-  more_info: 
+  more_info: PostDoc @ TUM
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -24,10 +24,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I'm Yunjia. I am working at University of Munich with [Prof. Nils Thuerey](https://ge.in.tum.de/about/n-thuerey/), with interest on applying machine
-learning to design optimization tasks, especially the aerodynamic shape optimization.
+Hi, I'm Yunjia. I am working at Technical University of Munich with [Prof. Nils Thuerey](https://ge.in.tum.de/about/n-thuerey/). My interest is on applying machine learning to design optimization tasks, especially the aerodynamic shape optimization.
 
-Currently, my research is sponsored with the BMW, and trying to build pipelines for coupling differential flow solver with gradient-based shape optimization for autos. 
+Currently, my research is sponsored by the BMW, in which I try to build pipelines for coupling differential flow solver with gradient-based shape optimization for autos. 
 
 Prior to this, I received my Ph.D. in Aerospace Engineering under the supervision of Prof. Haixin Chen at Tsinghua University, China. My doctoral research focused on 
 surrogate-based aerodynamic shape optimization for airfoils and wings, where I proposed a prior-based strategy to enhance model's generalization ability, and established

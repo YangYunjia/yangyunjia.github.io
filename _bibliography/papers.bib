@@ -21,7 +21,7 @@
 }
 
 @article{yang_fast_2024,
-  abbr={AIAA J},
+    abbr={AIAA J},
 	title = {Fast {Buffet}-{Onset} {Prediction} and {Optimization} {Method} {Based} on {Pretrained} {Flowfield} {Prediction} {Model}},
 	volume = {62},
 	copyright = {All rights reserved},
@@ -38,6 +38,7 @@
 }
 
 @inproceedings{yang_buffet_2024,
+    abbr={AIAA SCITECH},
 	address = {Orlando, FL},
 	title = {Buffet onset optimization for supercritical airfoils with prior-based pressure profile prediction model},
 	copyright = {All rights reserved},
@@ -55,6 +56,7 @@
 }
 
 @article{yang_flowfield_2022,
+    abbr={AIAA J},
 	title = {Flowfield {Prediction} of {Airfoil} {Off}-{Design} {Conditions} {Based} on a {Modified} {Variational} {Autoencoder}},
 	volume = {60},
 	copyright = {All rights reserved},
@@ -92,6 +94,7 @@
 }
 
 @article{yang_analysis_2023,
+    abbr={AST},
 	title = {Analysis and manipulation of the separation zone in an overexpanded combined exhaust nozzle},
 	volume = {135},
 	copyright = {All rights reserved},
@@ -108,6 +111,7 @@
 }
 
 @article{yang_transferable_2024,
+    abbr={PoF},
 	title = {Transferable machine learning model for the aerodynamic prediction of swept wings},
 	volume = {36},
 	copyright = {All rights reserved},
@@ -123,10 +127,10 @@
 	month = jul,
 	year = {2024},
 	pages = {076105},
-	file = {Yang et al. - 2024 - Transferable machine learning model for the aerody.pdf:C\:\\Users\\yang\\Zotero\\storage\\X2YRSHZL\\Yang et al. - 2024 - Transferable machine learning model for the aerody.pdf:application/pdf},
 }
 
 @inproceedings{yang_interactive_2023,
+    abbr={EUCASS},
 	address = {Laussane, Switzerland},
 	title = {Interactive optimization of fluidic injection for single expansion ramp nozzle based on a modified autoencoder},
 	volume = {2023-343},
@@ -140,6 +144,22 @@
 	year = {2023},
 	keywords = {反向传播},
 	file = {Yang et al. - 2023 - Interactive optimization of fluidic injection for .pdf:C\:\\Users\\yang\\Zotero\\storage\\KFQ96H23\\Yang et al. - 2023 - Interactive optimization of fluidic injection for .pdf:application/pdf},
+}
+
+@inproceedings{yang_rapid_2025,
+    abbr={EUCASS},
+	address = {Rome, Italy},
+	title = {Rapid aerodynamic prediction for wings via physics-embedded Transformer},
+	volume = {2025-675},
+	copyright = {All rights reserved},
+	doi = {10.13009/EUCASS2025-675},
+	abstract = {Fast and accurate prediction of aerodynamic flow fields is essential for efficient aircraft design but remains challenging for complex transonic wing configurations. This study advances the use of machine learning for aerodynamic modeling by developing a generalizable dataset and applying Transformer-based neural network architectures to realistic wing geometries. A comprehensive dataset of transonic swept wings is constructed using a geometric parameterization approach inspired by engineering needs, covering a wide range of wing shapes and operating conditions. Two Transformer-based models are then investigated: the Vision Transformer (ViT) and the Physics-embedded Transformer (PeT), which incorporates physics-aware tokenization and attention mechanisms. The models are trained on the proposed dataset, and results show that Transformer-based models significantly outperform a U-Net baseline in predicting surface pressure and friction distributions, as well as integrated aerodynamic coefficients. The model implementations and an interactive prediction tool are released at https://github.com/YangYunjia/flogen, supporting future applications in data-driven aerodynamic design workflows.},
+	language = {en},
+	author = {Yang, Yunjia and Tang, Weishao and Zhang, Yufei and Chen, Haixin},
+	month = jul,
+	year = {2025},
+	booktitle = {11th European Conference for AeroSpace Sciences (EUCASS)},
+  additional_info={. This paper is [nominated](https://eucass2025.eu/asi-best-student-paper-award/) as the top 3 best papers in the *AEROFLIPHY + CFDMPS + FLOCON* regions},
 }
 
 @article{yang_rapid_2024,
@@ -160,7 +180,16 @@
 	author = {Yang, Yunjia and Li, Runze and Zhang, Yufei and Lu, Lu and Chen, Haixin},
 	month = jun,
   selected={true},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
   annotation={* Example use of superscripts<br>† Albert Einstein},
 }
 
+@preprint{yang2024machinelearningbasedmultipointoptimizationfluidic,
+      title={Machine-learning-based multipoint optimization of fluidic injection parameters for improving nozzle performance}, 
+      author={Yunjia Yang and Jiazhe Li and Yufei Zhang and Haixin Chen},
+      abstract={Fluidic injection provides a promising solution to improve the performance of overexpanded single expansion ramp nozzle (SERN) during vehicle acceleration. However, determining the injection parameters for the best overall performance under multiple nozzle operating conditions is still a challenge. The gradient-based optimization method requires gradients of injection parameters at each design point, leading to high computational costs if traditional computational fluid dynamic (CFD) simulations are adopted. This paper uses a pretrained neural network model to replace CFD during optimization to quickly calculate the nozzle flow field at multiple design points. Considering the physical characteristics of the nozzle flow field, a prior-based prediction strategy is adopted to enhance the model's transferability. In addition, the back-propagation algorithm of the neural network is adopted to quickly evaluate the gradients by calling the computation process only once, thereby greatly reducing the gradient computation time compared to the finite differential method. As a test case, the average nozzle thrust coefficient of a SERN at seven design points is optimized. An improvement in the thrust coefficient of 1.14% is achieved, and the time cost is greatly reduced compared with the traditional optimization methods, even when the time to establish the database for training is considered.},
+      year={2024},
+      eprint={2409.12707},
+      archivePrefix={arXiv},
+      primaryClass={physics.flu-dyn},
+      html={https://arxiv.org/abs/2409.12707}, 
+}

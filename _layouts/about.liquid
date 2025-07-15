@@ -70,6 +70,8 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <hr>
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
@@ -77,6 +79,8 @@ layout: default
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
+
+    <hr>
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
